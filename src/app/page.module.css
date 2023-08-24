@@ -1,19 +1,39 @@
 .container{
-
+display: flex;
+gap: 100px;
+align-items: center;
 }
 
 .item{
-
+display: flex;
+flex-direction: column;
+gap: 50px;
+flex: 1;
 }
 
 .title{
-
+    background: linear-gradient(to bottom, #194c33, #bbb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 72px;
 }
 
 .desc{
-
+font-weight: 300;
+font-size: 24px;
 }
 
 .img{
-    
+    height: 500px;
+    width: 100%;
+    object-fit: contain;
+}
+
+@keyframes move {
+    from {
+      transform: translateY(-10px);
+    }
+    to {
+      transform: translateY(10px);
+    }
 }
