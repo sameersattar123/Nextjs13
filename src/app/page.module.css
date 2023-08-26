@@ -26,8 +26,19 @@ font-size: 24px;
 .img{
     height: 500px;
     width: 100%;
-    object-fit: contain;
-}
+    object-fit: cover;
+    animation: move 3s infinite ease alternate;
+  }
+  
+  @keyframes move {
+      from{
+          transform: translateY(10px);
+      }
+      to{
+          transform: translateY(10px);
+      }
+  }
+
 
 @keyframes move {
     from {
